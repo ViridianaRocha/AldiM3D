@@ -1,0 +1,100 @@
+body{
+    background-color: #6dbe47;
+}
+
+section{
+    width: 85%;
+    height: 90vh;
+    margin-bottom: 30px;
+    background-color: var(--morningBlue);
+    border-radius: 0 0 12vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sc1 {
+    background-image: url(../assets/banner/printer.jpg);
+    background-size: cover;
+}
+
+#sc1 .container{
+    width: 75%;
+    display: flex;
+}
+
+#sc1 .container .container_Info{
+    width: 60%;
+}
+
+#sc1 .container .container_Info h1{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+#sc1 .container .container_Info a{
+    display: block;
+    width: fit-content;
+    background-color: var(--metallicGreen);
+    color: var(--morningBlue);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#sc1 .container .container_Info a:hover{
+    background-color: var(--apple);
+    transition: .3s;
+}
+
+#sc1 .container .container_Info a p{
+    padding: 10px 40px;
+}
+
+#sc2{
+    margin-left: 15%;
+    border-radius: 12vw 0 0 12vw;
+}
+
+#sc3{
+    border-radius: 0 12vw 12vw 0;
+    background-image: url(../assets/banner/printerr.jpg);
+    background-size: cover;
+}
+
+#sc3 .container{
+    width: 75%;
+    display: flex;
+}
+
+#sc3 .container .container_Questions{
+    width: 60%;
+}
+
+#sc3 .container .container_Questions h1{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+#sc3 .container .container_Questions a{
+    display: block;
+    width: fit-content;
+    background-color: var(--metallicGreen);
+    color: var(--morningBlue);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#sc3 .container .container_Questions a:hover{
+    background-color: var(--apple);
+    transition: .3s;
+}
+
+#sc3 .container .container_Questions a p{
+    padding: 10px 40px;
+}
+
+

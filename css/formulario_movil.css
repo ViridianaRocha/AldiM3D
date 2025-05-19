@@ -1,0 +1,31 @@
+@media  (max-width: 425px) {
+
+section {
+    width: 85%;
+    margin: 50px auto;
+}
+
+section h2 {
+    margin: 40px 0;
+    text-align: center;
+}
+
+section form {
+    width: 85%;
+    display: flex;
+}
+
+section form .container_F {
+    width: 100%;
+    display: block;
+}
+
+section form .container_F .container_Form {
+    width: 100%;
+}
+
+section form .submit {
+    width: 70%;
+}
+
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SLQM0BRC3E"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-SLQM0BRC3E');
+    </script>
+    <!--ICONOS-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/header-footer.css">
+    <link rel="stylesheet" href="../css/formularios.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/header-footer_movil.css">
+    <link rel="stylesheet" href="../css/formulario_movil.css">
+
+    
+    <!--STYLE-->
+    <style>
+        .hidden {
+            display: none;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+
+    <title>AldiM</title>
+</head>
+
+<body>
+    <nav class="menu_Nav">
+        <div>
+            <a class="a1" href="../index.html">AldiM 3D</a>
+            <a class="a2" href="cotizar.html">Cotizar</a>
+            <a class="a2" href="pedir.html">Pedir</a>
+        </div>
+    </nav>
+
+    <section id="sec5">
+        <h2>Formulario de cotizacion</h2>
+        <form action="../php/procesar_cotizacion.php" method="POST" enctype="multipart/form-data">
+            <div class="container_F">
+                <div class="container_Form">
+                    <div class="form_Campos">
+                        <label>Nombre completo:</label>
+                        <input type="nombre" name="nombre" required placeholder="Viridiana Rocha">
+                    </div>
+                    <div class="form_Campos">
+                        <label>Email:</label>
+                        <input type="email" name="email" required placeholder="viridiana@gmail.com">
+                    </div>
+                    <div class="form_Campos">
+                        <label>Medidas:</label>
+                        <input type="text" name="medidas" required placeholder="Ej. 10x10x5 cm">
+                    </div>
+                    <div class="form_Campos">
+                        <label>Archivo STL:</label>
+                        <input style="height: auto; border: none; padding: 0; border-radius: 0;" type="file" name="archivo_stl" accept=".stl" required>
+                    </div>
+                    <div class="form_Campos">
+                        <label>Material de Impresión:</label>
+                        <select name="material" id="material" required>
+                            <option value="">Seleccione</option>
+                            <option value="PLA">PLA (coloreable, lijable)</option>
+                            <option value="ABS">ABS (coloreable, lijable)</option>
+                            <option value="Resina">Resina (no lijable)</option>
+                        </select>
+                    </div>
+                    <div class="form_Campos">
+                        <div id="color-section" class="hidden">
+                            <label>Color del material:</label>
+                            <select name="color">
+                                <option value="">Seleccione</option>
+                                <option value="Rojo">Rojo</option>
+                                <option value="Azul">Azul</option>
+                                <option value="Negro">Rosa</option>
+                                <option value="Rojo">Verde</option>
+                                <option value="Azul">Cafe</option>
+                                <option value="Negro">Blanco</option>
+                                <option value="Rojo">Negro</option>
+                                <option value="Azul">Gris</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form_Campos">
+                        <label>Calidad de impresión:</label>
+                        <select name="calidad" required>
+                            <option value="Baja">Baja</option>
+                            <option value="Media">Media</option>
+                            <option value="Alta">Alta</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="container_Form">
+                    <div class="form_Campos check">
+                        <input type="checkbox" id="lijado" name="lijado" value="1" disabled>
+                        <label>¿Deseas lijado?</label>
+                    </div>
+                    <div class="form_Campos check">
+                        <input type="checkbox" id="pintado" name="pintado" value="1">
+                        <label>¿Deseas pintado?</label>
+                    </div>
+                    <div class="form_Campos">
+                        <div id="imagenes-pintado" class="hidden">
+                            <label>Sube imágenes de referencia para pintar:</label>
+                            <input style="height: auto; border: none; padding: 0; border-radius: 0;" type="file" name="imagenes_pintado[]" accept="image/*" multiple>
+
+                        </div>
+                    </div>
+                    <div class="form_Campos check">
+                        <input type="checkbox" id="base" name="base" value="1">
+                        <label>¿Deseas agregar una base?</label>
+                    </div>
+                    <div class="form_Campos">
+                        <div id="base-opciones" class="hidden">
+                            <label>Forma de la base:</label>
+                            <select name="forma_base">
+                                <option value="cuadrada">Cuadrada</option>
+                                <option value="circular">Circular</option>
+                                <option value="circular">Hexagonal</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form_Campos">
+                        <div id="base-color" class="hidden">
+                            <label>Color de la base:</label>
+                            <select name="color_base">
+                                <option value="negro">Negro</option>
+                                <option value="blanco">Blanco</option>
+                                <option value="blanco">Transparente</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form_Campos">
+                        <label>Detalles adicionales:</label>
+                        <textarea name="detalles"></textarea>
+                    </div>
+                </div>
+            </div>
+            <input class="submit" type="submit" value="Hacer Cotización">
+        </form>
+
+
+    </section>
+
+    <footer>
+        <div class="madeBy">
+            <p>Desarrollado por Viridiana Rocha</p>
+        </div>
+        <div class="container_Foot">
+            <!--<div class="socialMedia">
+                <i class='bx bxl-facebook-circle'></i>
+                <i class='bx bxl-instagram-alt' ></i>
+                <i class='bx bxl-tiktok' ></i>
+            </div>-->
+
+            <div class="extras">
+                 <a class="a2" href="sitemap.html">Mapa de sitio</a>
+                <a class="a2" href="../php/index.php">Administrador</a>
+                <a class="a2" href="#">Términos y condiciones</a>
+                <a class="a1" href="../index.html">AldiM 3D</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const material = document.getElementById("material");
+        const colorSection = document.getElementById("color-section");
+        const lijado = document.getElementById("lijado");
+        const pintado = document.getElementById("pintado");
+        const imagenesPintado = document.getElementById("imagenes-pintado");
+        const base = document.getElementById("base");
+        const baseOpciones = document.getElementById("base-opciones");
+        const baseColor = document.getElementById("base-color");
+
+        material.addEventListener("change", () => {
+            const valor = material.value;
+            const coloreables = ["PLA", "ABS"];
+            colorSection.classList.toggle("hidden", !coloreables.includes(valor));
+            lijado.disabled = !["PLA", "ABS"].includes(valor);
+        });
+
+        pintado.addEventListener("change", () => {
+            imagenesPintado.classList.toggle("hidden", !pintado.checked);
+        });
+
+        base.addEventListener("change", () => {
+            baseOpciones.classList.toggle("hidden", !base.checked);
+            baseColor.classList.toggle("hidden", !base.checked);
+        });
+    </script>
+</body>
+
+</html>

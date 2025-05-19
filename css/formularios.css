@@ -1,0 +1,104 @@
+section {
+    width: 80%;
+    margin: 30px auto;
+    background-color: var(--morningBlue);
+    border-radius: 6vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section h2 {
+    margin: 45px 0;
+}
+
+section form {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section form .container_F {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+section form .container_F .container_Form {
+    width: 42%;
+}
+
+section form .container_F .container_Form .check{
+    display: flex;
+    justify-content: space-around;
+}
+
+section form .container_F .container_Form .form_Campos label {
+    color: var(--metallicGreen);
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+section form .container_F .container_Form .form_Campos input {
+    width: 100%;
+    height: 40px;
+    padding-left: 15px;
+    border-radius: 15px;
+    border: solid var(--metallicGreen) 1px;
+}
+
+section form .container_F .container_Form .check{
+    display: flex;
+    justify-content: space-between;
+}
+
+section form .container_F .container_Form .check input{
+    width: 30px;
+}
+
+section form .container_F .container_Form .check label{
+    width: 85%;
+}
+
+section form .container_F .container_Form .form_Campos select {
+    width: 50%;
+    height: 40px;
+    padding-left: 15px;
+    border-radius: 15px;
+    border: solid var(--metallicGreen) 1px;
+}
+
+
+section form .container_F .container_Form .form_Campos textarea {
+    width: 100%;
+    height: 80px;
+    padding: 5px 15px;
+    border-radius: 15px;
+    border: solid var(--metallicGreen) 1px;
+}
+
+section form .submit {
+    width: 30%;
+    height: 40px;
+    font-size: 1.1rem;
+    margin: 30px 0;
+    background-color: var(--metallicGreen);
+    color: var(--morningBlue);
+    font-weight: 600;
+    margin-top: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 0;
+}
+
+section form .submit:hover{
+    background-color: var(--smokyBlack);
+    transition: .2s;
+}
+
+#sec6 form .submit {
+    margin-top: 45px;
+}

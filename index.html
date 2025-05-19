@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SLQM0BRC3E"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-SLQM0BRC3E');
+    </script>
+    <!--ICONOS-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <!--CSS-->
+
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header-footer_movil.css">
+    <link rel="stylesheet" href="css/index_movil.css">
+    <link rel="stylesheet" href="css/carrusel.css">
+    <!--STYLE-->
+    <style>
+        nav {
+            position: absolute;
+            background-color: #dbdbdb00;
+        }
+
+        p {
+            color: var(--morningBlue);
+            font-weight: 400;
+        }
+
+        nav div a {
+            color: var(--apple);
+        }
+
+        nav div .a2:hover {
+            color: var(--metallicGreen);
+        }
+    </style>
+
+
+    <title>AldiM</title>
+</head>
+
+<body>
+    <nav class="menu_Nav">
+        <div>
+            <a class="a1" href="#">AldiM 3D</a>
+            <a class="a2" href="html/cotizar.html">Cotizar</a>
+            <a class="a2" href="html/pedir.html">Pedir</a>
+        </div>
+    </nav>
+
+    <section id="sc1">
+        <div class="container">
+            <div class="container_Info">
+                <h1>AldiM 3D</h1>
+                <p>
+                    ¿Tienes un diseño único que quieres ver hecho realidad? Nosotros te ofrecemos soluciones
+                    personalizadas de
+                    impresión 3D para todo tipo de proyectos:
+                    desde piezas técnicas hasta elementos decorativos o prototipos funcionales.
+                </p>
+                <a href="html/cotizar.html">
+                    <p>Cotizar</p>
+                </a>
+            </div>
+            <!--<img src="assets/img/" alt="img">-->
+        </div>
+    </section>
+
+    <section id="sc2">
+        <!--<div class="container_carousel">
+            
+            <div id="category-buttons">
+                <button data-category="decoracio">Decoración</button>
+                <button data-category="juguetes">Juguetes</button>
+                <button data-category="cosplay">Cosplay</button>
+                <button data-category="figuras">Figuras</button>
+            </div>
+        </div>-->
+
+        <div class="container-all">
+            <button class="nav left"><i class="bx bx-chevron-left"></i></button>
+            <div class="carousel-container">
+                <div class="carousel" id="carousel">
+                    <div class="item-slide">
+                        <img src="assets/img/img2.jpg" alt="">
+                    </div>
+                    <div class="item-slide">
+                        <img src="assets/img/img1.jpg" alt="">
+                    </div>
+                    <div class="item-slide">
+                        <img src="assets/img/img3.jpg" alt="">
+                    </div>
+                    <div class="item-slide">
+                        <img src="assets/img/img4.jpg" alt="">
+                    </div>
+                    <div class="item-slide">
+                        <img src="assets/img/img5.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <button class="nav right"><i class="bx bx-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <section id="sc3">
+        <div class="container">
+            <div class="container_Questions">
+                <h1>Preguntas frecuentes</h1>
+                <p>En <strong>AldiM 3D</strong> queremos que tengas total confianza en nuestro servicio. Por eso,
+                    reunimos las preguntas más comunes que recibimos sobre nuestros procesos, materiales, tiempos de
+                    entrega, pagos y mucho más.</p>
+                <a href="html/preguntas.html">
+                    <p>Más información</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="madeBy">
+            <a href="html/desarrollador.html">Desarrollado por Viridiana Rocha</a>
+        </div>
+        <div class="container_Foot">
+            <!--<div class="socialMedia">
+                <i class='bx bxl-facebook-circle'></i>
+                <i class='bx bxl-instagram-alt' ></i>
+                <i class='bx bxl-tiktok' ></i>
+            </div>-->
+
+            <div class="extras">
+                <a class="a2" href="html/sitemap.html">Mapa de sitio</a>
+                <a class="a2" href="php/index.php">Vendedor</a>
+                <a class="a2" href="#">Términos y condiciones</a>
+                <a class="a1" href="#">AldiM 3D</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

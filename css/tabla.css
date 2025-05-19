@@ -1,0 +1,53 @@
+h2 {
+    margin: 30px auto;
+}
+
+section {
+    justify-content: start;
+}
+
+section .container {
+    width: 90%;
+}
+
+table {
+    width: 100%;
+    border: solid var(--grannySmithApple) 1px;
+    margin-bottom: 30px;
+}
+
+table tr,
+th,
+td {
+    border: solid var(--grannySmithApple) 1px;
+    padding: 10px;
+}
+
+@media (max-width: 425px) {
+    h2 {
+        margin: 30px auto;
+    }
+
+    section {
+        width: 90%;
+        height: auto;
+        justify-content: start;
+    }
+
+    section .container {
+        width: 90%;
+    }
+
+    table {
+        width: 100%;
+        border: solid var(--grannySmithApple) 1px;
+
+    }
+
+    table tr,
+    th,
+    td {
+        border: solid var(--grannySmithApple) 1px;
+        padding: 10px;
+    }
+}
